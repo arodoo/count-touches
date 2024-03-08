@@ -1,0 +1,6 @@
+<div class="car-detail" *ngIf="currentCar">
+    <h1>{{ currentCar.name }}</h1>
+        <p>Clicks: {{ currentCar.clickCount }}</p>
+    <img [src]="currentCar.imgSrc" alt="Imagen de {{ currentCar.name }}" (click)="incrementCounter()">
+
+</div>
